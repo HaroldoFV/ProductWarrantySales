@@ -12,8 +12,44 @@ public class Product : AggregateRoot
     public int Stock { get; private set; }
     public string Supplier { get; private set; }
     public bool HasWarranty { get; private set; }
+    public DateTime CreatedAt { get; private set; }
+    public DateTime LastUpdated { get; private set; }
+
 
     public Product(
+        string name,
+        decimal price,
+        int minimumStock,
+        int maximumStock,
+        int stock,
+        string supplier,
+        bool hasWarranty)
+    {
+        Name = name;
+        Price = price;
+        MinimumStock = minimumStock;
+        MaximumStock = maximumStock;
+        Stock = stock;
+        Supplier = supplier;
+        HasWarranty = hasWarranty;
+        CreatedAt = DateTime.Now;
+
+        Validate();
+    }
+
+
+    public void UpdateStock(int quantity)
+    {
+        if (quantity < 0 && Math.Abs(quantity) > Stock)
+            throw new InvalidOperationException("Insufficient stock to reduce.");
+
+        Stock += quantity;
+
+        Validate();
+    }
+
+
+    public void Update(
         string name,
         decimal price,
         int minimumStock,
@@ -32,18 +68,6 @@ public class Product : AggregateRoot
 
         Validate();
     }
-
-
-    public void UpdateStock(int quantity)
-    {
-        if (quantity < 0 && Math.Abs(quantity) > Stock)
-            throw new InvalidOperationException("Insufficient stock to reduce.");
-
-        Stock += quantity;
-
-        Validate();
-    }
-
 
     #region Validation
 
