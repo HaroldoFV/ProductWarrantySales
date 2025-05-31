@@ -10,6 +10,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ProductMicroservice", "Prod
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductMicroservice.Domain", "src\microservices\ProductMicroservice\ProductMicroservice.Domain\ProductMicroservice.Domain.csproj", "{C12F6B1B-FB52-4660-81DA-C7FA73B61C33}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ProductMicroservice", "ProductMicroservice", "{D9D87688-658A-482D-A457-BDF003AFC13C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductMicroservice.UnitTests", "tests\ProductMicroservice\ProductMicroservice.UnitTests\ProductMicroservice.UnitTests.csproj", "{626D8A72-6FB3-4E7F-B97C-026EC00AA8EF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -20,10 +24,16 @@ Global
 		{C12F6B1B-FB52-4660-81DA-C7FA73B61C33}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C12F6B1B-FB52-4660-81DA-C7FA73B61C33}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C12F6B1B-FB52-4660-81DA-C7FA73B61C33}.Release|Any CPU.Build.0 = Release|Any CPU
+		{626D8A72-6FB3-4E7F-B97C-026EC00AA8EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{626D8A72-6FB3-4E7F-B97C-026EC00AA8EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{626D8A72-6FB3-4E7F-B97C-026EC00AA8EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{626D8A72-6FB3-4E7F-B97C-026EC00AA8EF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{DEDC4D36-2471-4C34-A784-F49393AD732E} = {292D3D07-3263-4915-971E-C5AEE551A848}
 		{2340A734-D1A6-4D8E-B2B8-CDE64C40AD7C} = {DEDC4D36-2471-4C34-A784-F49393AD732E}
 		{C12F6B1B-FB52-4660-81DA-C7FA73B61C33} = {2340A734-D1A6-4D8E-B2B8-CDE64C40AD7C}
+		{D9D87688-658A-482D-A457-BDF003AFC13C} = {21874A19-A902-437A-AEA1-F31E91291991}
+		{626D8A72-6FB3-4E7F-B97C-026EC00AA8EF} = {D9D87688-658A-482D-A457-BDF003AFC13C}
 	EndGlobalSection
 EndGlobal
