@@ -1,0 +1,83 @@
+@baseUrl = http://localhost:5238
+@warrantyId = {{createWarranty.response.body.data.id}}
+
+### Create Warranty
+# @name createWarranty
+POST {{baseUrl}}/api/warranties
+Content-Type: application/json
+
+{
+  "name": "Extended Warranty",
+  "value": 299.99,
+  "termInYears": 2
+}
+
+### Create Warranty - Invalid (Empty Name)
+POST {{baseUrl}}/api/warranties
+Content-Type: application/json
+
+{
+  "name": "",
+  "value": 299.99,
+  "termInYears": 2
+}
+
+### Create Warranty - Invalid (Negative Value)
+POST {{baseUrl}}/api/warranties
+Content-Type: application/json
+
+{
+  "name": "Extended Warranty",
+  "value": -50,
+  "termInYears": 2
+}
+
+### Get Warranty by Id
+GET {{baseUrl}}/api/warranties/{{warrantyId}}
+
+### Get Warranty - Not Found
+GET {{baseUrl}}/api/warranties/99999999-9999-9999-9999-999999999999
+
+### Update Warranty
+PUT {{baseUrl}}/api/warranties/f3b3c6b8-af92-45b3-a5b8-05a124912826
+Content-Type: application/json
+
+{
+  "name": "Premium Extended Warranty",
+  "value": 399.99,
+  "termInYears": 3
+}
+
+### Update Warranty - Not Found
+PUT {{baseUrl}}/api/warranties/99999999-9999-9999-9999-999999999999
+Content-Type: application/json
+
+{
+  "name": "Premium Extended Warranty",
+  "value": 399.99,
+  "termInYears": 3
+}
+
+### Delete Warranty
+DELETE {{baseUrl}}/api/warranties/f3b3c6b8-af92-45b3-a5b8-05a124912826
+
+### Delete Warranty - Not Found
+DELETE {{baseUrl}}/api/warranties/99999999-9999-9999-9999-999999999999
+
+### List Warranties - Default
+GET {{baseUrl}}/api/warranties
+
+### List Warranties - With Pagination
+GET {{baseUrl}}/api/warranties?page=1&per_page=5
+
+### List Warranties - With Search
+GET {{baseUrl}}/api/warranties?search=Extended
+
+### List Warranties - With Sort Ascending
+GET {{baseUrl}}/api/warranties?sort=name&dir=asc
+
+### List Warranties - With Sort Descending
+GET {{baseUrl}}/api/warranties?sort=value&dir=desc
+
+### List Warranties - Combined Filters
+GET {{baseUrl}}/api/warranties?page=1&per_page=10&search=Extended&sort=value&dir=desc
