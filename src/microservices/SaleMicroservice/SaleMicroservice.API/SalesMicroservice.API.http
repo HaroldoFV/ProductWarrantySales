@@ -1,0 +1,68 @@
+@baseUrl = http://localhost:5044/api
+@saleId = ade5146a-9bf3-4c2b-bf14-393143fe503a
+
+### Create Sale
+POST {{baseUrl}}/sales
+Content-Type: application/json
+
+{
+  "customerName": "John Doe",
+  "items": [
+    {
+      "productId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+      "quantity": 10,
+      "unitPrice": 19.90,
+      "warranty": {
+        "warrantyId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+        "value": 1000
+      }
+    }
+  ]
+}
+
+### Get Sale (Should return 404 if not found)
+GET {{baseUrl}}/sales/e1e43898-5147-4513-834c-54a6be00f910
+
+### Get Sale with valid ID (replace ID with one created)
+# Substitua o ID abaixo por um ID válido retornado no Create
+GET {{baseUrl}}/sales/a01b681c-9bbe-4e35-8213-9d54ead7f6d0
+
+### Delete Sale
+DELETE {{baseUrl}}/sales/a01b681c-9bbe-4e35-8213-9d54ead7f6d0
+
+### Create Sale with Invalid Data (Validation Test)
+POST {{baseUrl}}/sales
+Content-Type: application/json
+
+{
+  "customerName": "",
+  "items": []
+}
+
+### Create Sale with Multiple Items
+POST {{baseUrl}}/sales
+Content-Type: application/json
+
+{
+  "customerName": "Jane Doe",
+  "items": [
+    {
+      "productId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+      "quantity": 2,
+      "unitPrice": 29.90,
+      "warranty": {
+        "warrantyId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+        "value": 500
+      }
+    },
+    {
+      "productId": "4fa85f64-5717-4562-b3fc-2c963f66afa7",
+      "quantity": 1,
+      "unitPrice": 99.90,
+      "warranty": {
+        "warrantyId": "5fa85f64-5717-4562-b3fc-2c963f66afa8",
+        "value": 2000
+      }
+    }
+  ]
+}
