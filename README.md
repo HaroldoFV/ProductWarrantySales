@@ -45,4 +45,4 @@ docker-compose up --build
 
 ### Usando Arquivos HTTP
 
-O projeto inclui arquivos `.http` para testar as APIs diretamente do Visual Studio Code ou JetBrains Rider. Estes arquivos estão localizados em:
+O projeto inclui arquivos `.http` para testar as APIs diretamente do Visual Studio Code ou JetBrains Rider.
