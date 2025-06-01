@@ -34,6 +34,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WarrantyMicroservice", "War
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WarrantyMicroservice.UnitTests", "tests\WarrantyMicroservice\WarrantyMicroservice.UnitTests\WarrantyMicroservice.UnitTests.csproj", "{8FCB937D-B6B7-46C7-9402-AC38F01EEC7D}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SaleMicroservice", "SaleMicroservice", "{4B082457-679D-4915-B6DD-9D03FC1DB2D5}"
+	ProjectSection(SolutionItems) = preProject
+		src\microservices\SaleMicroservice\SalesMicroservice.API\obj\Debug\net8.0\.NETCoreApp,Version = v8.0.AssemblyAttributes.cs = src\microservices\SaleMicroservice\SalesMicroservice.API\obj\Debug\net8.0\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SaleMicroservice.API", "src\microservices\SaleMicroservice\SaleMicroservice.API\SaleMicroservice.API.csproj", "{B3250EB3-AD2F-41A7-BCB3-F1DCD6647A8D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SaleMicroservice", "SaleMicroservice", "{1F482A57-183A-44A6-B134-A0657E5D1F53}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SaleMicroservice.UnitTests", "tests\SaleMicroservice\SaleMicroservice.UnitTests\SaleMicroservice.UnitTests.csproj", "{D0856C9A-BEA2-453D-BB76-D4369B98CA67}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -80,6 +91,14 @@ Global
 		{8FCB937D-B6B7-46C7-9402-AC38F01EEC7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8FCB937D-B6B7-46C7-9402-AC38F01EEC7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8FCB937D-B6B7-46C7-9402-AC38F01EEC7D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3250EB3-AD2F-41A7-BCB3-F1DCD6647A8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3250EB3-AD2F-41A7-BCB3-F1DCD6647A8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3250EB3-AD2F-41A7-BCB3-F1DCD6647A8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3250EB3-AD2F-41A7-BCB3-F1DCD6647A8D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0856C9A-BEA2-453D-BB76-D4369B98CA67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0856C9A-BEA2-453D-BB76-D4369B98CA67}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0856C9A-BEA2-453D-BB76-D4369B98CA67}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0856C9A-BEA2-453D-BB76-D4369B98CA67}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{DEDC4D36-2471-4C34-A784-F49393AD732E} = {292D3D07-3263-4915-971E-C5AEE551A848}
@@ -97,5 +116,9 @@ Global
 		{E83607C5-A75E-4171-8AD7-2FFD2BD4EAEF} = {2A7EA17B-83AC-429F-AF0A-0A125506ADAD}
 		{D686E465-3A48-4E89-A008-CF8E43F4D5C0} = {21874A19-A902-437A-AEA1-F31E91291991}
 		{8FCB937D-B6B7-46C7-9402-AC38F01EEC7D} = {D686E465-3A48-4E89-A008-CF8E43F4D5C0}
+		{4B082457-679D-4915-B6DD-9D03FC1DB2D5} = {DEDC4D36-2471-4C34-A784-F49393AD732E}
+		{B3250EB3-AD2F-41A7-BCB3-F1DCD6647A8D} = {4B082457-679D-4915-B6DD-9D03FC1DB2D5}
+		{1F482A57-183A-44A6-B134-A0657E5D1F53} = {21874A19-A902-437A-AEA1-F31E91291991}
+		{D0856C9A-BEA2-453D-BB76-D4369B98CA67} = {1F482A57-183A-44A6-B134-A0657E5D1F53}
 	EndGlobalSection
 EndGlobal
