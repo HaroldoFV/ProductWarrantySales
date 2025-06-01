@@ -30,6 +30,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WarrantyMicroservice.Applic
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WarrantyMicroservice.API", "src\microservices\WarrantyMicroservice\WarrantyMicroservice.API\WarrantyMicroservice.API.csproj", "{E83607C5-A75E-4171-8AD7-2FFD2BD4EAEF}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WarrantyMicroservice", "WarrantyMicroservice", "{D686E465-3A48-4E89-A008-CF8E43F4D5C0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WarrantyMicroservice.UnitTests", "tests\WarrantyMicroservice\WarrantyMicroservice.UnitTests\WarrantyMicroservice.UnitTests.csproj", "{8FCB937D-B6B7-46C7-9402-AC38F01EEC7D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -72,6 +76,10 @@ Global
 		{E83607C5-A75E-4171-8AD7-2FFD2BD4EAEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E83607C5-A75E-4171-8AD7-2FFD2BD4EAEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E83607C5-A75E-4171-8AD7-2FFD2BD4EAEF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8FCB937D-B6B7-46C7-9402-AC38F01EEC7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8FCB937D-B6B7-46C7-9402-AC38F01EEC7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8FCB937D-B6B7-46C7-9402-AC38F01EEC7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8FCB937D-B6B7-46C7-9402-AC38F01EEC7D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{DEDC4D36-2471-4C34-A784-F49393AD732E} = {292D3D07-3263-4915-971E-C5AEE551A848}
@@ -87,5 +95,7 @@ Global
 		{1EBD5E02-CFE7-4B84-BE31-18B16EBE8ABB} = {2A7EA17B-83AC-429F-AF0A-0A125506ADAD}
 		{E66F88FA-9269-4B9A-9F8B-666EEFC5F9A2} = {2A7EA17B-83AC-429F-AF0A-0A125506ADAD}
 		{E83607C5-A75E-4171-8AD7-2FFD2BD4EAEF} = {2A7EA17B-83AC-429F-AF0A-0A125506ADAD}
+		{D686E465-3A48-4E89-A008-CF8E43F4D5C0} = {21874A19-A902-437A-AEA1-F31E91291991}
+		{8FCB937D-B6B7-46C7-9402-AC38F01EEC7D} = {D686E465-3A48-4E89-A008-CF8E43F4D5C0}
 	EndGlobalSection
 EndGlobal
