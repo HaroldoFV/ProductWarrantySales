@@ -13,7 +13,7 @@ Content-Type: {{contentType}}
     "maximumStock": 100,
     "stock": 50,
     "supplier": "Fornecedor ABC",
-    "hasWarranty": true
+    "hasWarranty": false
 }
 
 ### Obter todos os produtos

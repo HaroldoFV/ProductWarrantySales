@@ -20,6 +20,16 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductMicroservice.Applica
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductMicroservice.API", "src\microservices\ProductMicroservice\ProductMicroservice.API\ProductMicroservice.API.csproj", "{4F468DC6-71CE-46E1-9097-B8FF633C8D2F}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WarrantyMicroservice", "WarrantyMicroservice", "{2A7EA17B-83AC-429F-AF0A-0A125506ADAD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WarrantyMicroservice.Domain", "src\microservices\WarrantyMicroservice\WarrantyMicroservice.Domain\WarrantyMicroservice.Domain.csproj", "{5A3B6429-3288-4A87-A546-C315C493F5FA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WarrantyMicroservice.Infra.Data.EF", "src\microservices\WarrantyMicroservice\WarrantyMicroservice.Infra.Data.EF\WarrantyMicroservice.Infra.Data.EF.csproj", "{1EBD5E02-CFE7-4B84-BE31-18B16EBE8ABB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WarrantyMicroservice.Application", "src\microservices\WarrantyMicroservice\WarrantyMicroservice.Application\WarrantyMicroservice.Application.csproj", "{E66F88FA-9269-4B9A-9F8B-666EEFC5F9A2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WarrantyMicroservice.API", "src\microservices\WarrantyMicroservice\WarrantyMicroservice.API\WarrantyMicroservice.API.csproj", "{E83607C5-A75E-4171-8AD7-2FFD2BD4EAEF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -46,6 +56,22 @@ Global
 		{4F468DC6-71CE-46E1-9097-B8FF633C8D2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4F468DC6-71CE-46E1-9097-B8FF633C8D2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4F468DC6-71CE-46E1-9097-B8FF633C8D2F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A3B6429-3288-4A87-A546-C315C493F5FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A3B6429-3288-4A87-A546-C315C493F5FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A3B6429-3288-4A87-A546-C315C493F5FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A3B6429-3288-4A87-A546-C315C493F5FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1EBD5E02-CFE7-4B84-BE31-18B16EBE8ABB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1EBD5E02-CFE7-4B84-BE31-18B16EBE8ABB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1EBD5E02-CFE7-4B84-BE31-18B16EBE8ABB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1EBD5E02-CFE7-4B84-BE31-18B16EBE8ABB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E66F88FA-9269-4B9A-9F8B-666EEFC5F9A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E66F88FA-9269-4B9A-9F8B-666EEFC5F9A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E66F88FA-9269-4B9A-9F8B-666EEFC5F9A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E66F88FA-9269-4B9A-9F8B-666EEFC5F9A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E83607C5-A75E-4171-8AD7-2FFD2BD4EAEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E83607C5-A75E-4171-8AD7-2FFD2BD4EAEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E83607C5-A75E-4171-8AD7-2FFD2BD4EAEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E83607C5-A75E-4171-8AD7-2FFD2BD4EAEF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{DEDC4D36-2471-4C34-A784-F49393AD732E} = {292D3D07-3263-4915-971E-C5AEE551A848}
@@ -56,5 +82,10 @@ Global
 		{EC997FF4-336B-4137-BC1F-9D28C6954FB3} = {2340A734-D1A6-4D8E-B2B8-CDE64C40AD7C}
 		{3FA82752-70AC-41B2-981C-4FFD4B28F2AE} = {2340A734-D1A6-4D8E-B2B8-CDE64C40AD7C}
 		{4F468DC6-71CE-46E1-9097-B8FF633C8D2F} = {2340A734-D1A6-4D8E-B2B8-CDE64C40AD7C}
+		{2A7EA17B-83AC-429F-AF0A-0A125506ADAD} = {DEDC4D36-2471-4C34-A784-F49393AD732E}
+		{5A3B6429-3288-4A87-A546-C315C493F5FA} = {2A7EA17B-83AC-429F-AF0A-0A125506ADAD}
+		{1EBD5E02-CFE7-4B84-BE31-18B16EBE8ABB} = {2A7EA17B-83AC-429F-AF0A-0A125506ADAD}
+		{E66F88FA-9269-4B9A-9F8B-666EEFC5F9A2} = {2A7EA17B-83AC-429F-AF0A-0A125506ADAD}
+		{E83607C5-A75E-4171-8AD7-2FFD2BD4EAEF} = {2A7EA17B-83AC-429F-AF0A-0A125506ADAD}
 	EndGlobalSection
 EndGlobal

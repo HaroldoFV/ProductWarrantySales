@@ -69,7 +69,7 @@ public class Product : AggregateRoot
         Validate();
     }
 
-    #region Validation
+     #region Validation
 
     private void Validate()
     {
