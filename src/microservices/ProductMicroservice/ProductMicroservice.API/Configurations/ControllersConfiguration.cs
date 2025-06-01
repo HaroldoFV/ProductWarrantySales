@@ -25,7 +25,7 @@ public static class ControllersConfiguration
         services.AddEndpointsApiExplorer();
         services.AddSwaggerGen(option =>
         {
-            option.SwaggerDoc("v1", new OpenApiInfo { Title = "FC3 Codeflix Catalog", Version = "v1" });
+            option.SwaggerDoc("v1", new OpenApiInfo { Title = "Product Microservice", Version = "v1" });
         });
         return services;
     }
